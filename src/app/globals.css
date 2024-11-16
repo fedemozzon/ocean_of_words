@@ -17,3 +17,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-3 bg-[#f4e8d1] border border-[#d3b17d] rounded-md focus:outline-none focus:ring-2 focus:ring-[#8b6b4a] focus:border-transparent transition duration-200 ease-in-out text-[#5c4b3a] placeholder-[#8b6b4a];
+  }
+
+  .submit-button {
+    @apply w-full px-4 py-3 bg-[#8b6b4a] text-[#f4e8d1] rounded-md hover:bg-[#725839] focus:outline-none focus:ring-2 focus:ring-[#8b6b4a] focus:ring-offset-2 focus:ring-offset-[#f8f0e0] transition duration-200 ease-in-out font-serif;
+  }
+}
